@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link id="theme" rel="stylesheet" type="text/css" href="./CSS/dark.css" /> -->
+    <link id="theme" rel="stylesheet" type="text/css" href="./light.css" />
+        <!-- <link rel="icon" type="image/png" href="../" /> -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gotham' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" />
+  </head>
+  <body>
+      <div class="hero">
+        <header class="hero-navbar">
+          <div class="navbar-whole">
+
+            <div class="navbar-logo">
+              <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="nav-logo-1" d="M20.3489 12.37C19.9699 12.7513 19.6797 13.2115 19.4989 13.7177C19.3181 14.224 19.2512 14.7639 19.3029 15.299L19.2849 15.281C19.3381 15.9109 19.2531 16.5447 19.036 17.1384C18.8189 17.732 18.4749 18.2711 18.028 18.7181C17.581 19.165 17.0419 19.5091 16.4482 19.7261C15.8546 19.9432 15.2207 20.0282 14.5909 19.975L14.6089 19.993C13.8555 19.9229 13.0988 20.0868 12.4419 20.4625C11.7851 20.8382 11.2601 21.4073 10.9386 22.0923C10.6171 22.7773 10.5146 23.5447 10.6452 24.2901C10.7759 25.0354 11.1332 25.7223 11.6685 26.2571C12.2038 26.7919 12.891 27.1486 13.6364 27.2785C14.3819 27.4085 15.1492 27.3053 15.8339 26.9832C16.5186 26.661 17.0872 26.1356 17.4623 25.4784C17.8374 24.8212 18.0007 24.0644 17.9299 23.311L17.9489 23.329C17.8957 22.6992 17.9806 22.0653 18.1977 21.4716C18.4148 20.878 18.7589 20.3389 19.2058 19.8919C19.6528 19.445 20.1919 19.1009 20.7855 18.8839C21.3792 18.6668 22.013 18.5818 22.6429 18.635L22.6239 18.617C23.2393 18.6723 23.8588 18.5714 24.4249 18.3236C24.9909 18.0758 25.4853 17.6891 25.8621 17.1994C26.2389 16.7097 26.4861 16.1327 26.5805 15.5221C26.675 14.9114 26.6138 14.2868 26.4026 13.706C26.1914 13.1253 25.837 12.6073 25.3723 12.2C24.9076 11.7927 24.3476 11.5093 23.7442 11.3761C23.1408 11.2429 22.5135 11.2641 21.9205 11.4378C21.3275 11.6116 20.788 11.9322 20.3519 12.37H20.3489Z" />
+                <path class="nav-logo-1" d="M12.9718 17.635L12.9528 17.617C13.4881 17.6709 14.0287 17.6052 14.5356 17.4246C15.0424 17.244 15.5028 16.9531 15.8834 16.5728C16.2639 16.1925 16.5553 15.7323 16.7362 15.2256C16.9172 14.7189 16.9833 14.1784 16.9298 13.643L16.9488 13.661C16.8956 13.0311 16.9806 12.3973 17.1976 11.8036C17.4147 11.21 17.7588 10.6709 18.2057 10.2239C18.6527 9.77702 19.1918 9.43292 19.7854 9.21592C20.3791 8.99878 21.0129 8.91385 21.6428 8.96702L21.6238 8.94902C22.3773 9.01982 23.1342 8.85638 23.7914 8.48112C24.4487 8.10586 24.9741 7.53699 25.2961 6.85212C25.6181 6.16726 25.721 5.39973 25.5908 4.65422C25.4606 3.90871 25.1036 3.22153 24.5684 2.68639C24.0333 2.15126 23.3461 1.79422 22.6006 1.664C21.8551 1.53377 21.0876 1.63668 20.4027 1.9587C19.7178 2.28071 19.149 2.80616 18.7737 3.46337C18.3984 4.12057 18.235 4.87754 18.3058 5.63102L18.2878 5.61202C18.3411 6.24191 18.2563 6.87585 18.0393 7.46957C17.8223 8.06329 17.4782 8.60248 17.0313 9.04952C16.5843 9.49642 16.0451 9.84052 15.4514 10.0575C14.8576 10.2745 14.2237 10.3593 13.5938 10.306L13.6118 10.325C13.0765 10.2711 12.5358 10.3368 12.029 10.5174C11.5222 10.6979 11.0618 10.9889 10.6812 11.3692C10.3006 11.7495 10.0093 12.2097 9.82834 12.7164C9.64744 13.2231 9.58134 13.7636 9.63484 14.299L9.61684 14.281C9.66984 14.9108 9.58474 15.5446 9.36764 16.1382C9.15044 16.7317 8.80644 17.2708 8.35954 17.7177C7.9126 18.1646 7.37356 18.5086 6.78 18.7258C6.18644 18.9429 5.55265 19.028 4.92284 18.975L4.94084 18.993C4.18736 18.9222 3.43039 19.0856 2.77318 19.4609C2.11598 19.8362 1.59053 20.405 1.26852 21.0899C0.946502 21.7748 0.843582 22.5423 0.973812 23.2878C1.10404 24.0333 1.46108 24.7205 1.99621 25.2556C2.53135 25.7908 3.21853 26.1478 3.96404 26.278C4.70955 26.4082 5.47708 26.3053 6.16195 25.9833C6.84681 25.6613 7.41568 25.1359 7.79094 24.4787C8.16624 23.8214 8.32964 23.0645 8.25884 22.311L8.27784 22.329C8.22464 21.6991 8.30964 21.0653 8.52674 20.4716C8.74374 19.878 9.08784 19.3389 9.53474 18.8919C9.98174 18.445 10.5208 18.1009 11.1144 17.8839C11.7081 17.6668 12.3419 17.5818 12.9718 17.635Z" s/>
+                <path class="nav-logo-1" d="M6.2699 15.628C6.64892 15.2468 6.9391 14.7866 7.11974 14.2803C7.30038 13.774 7.36702 13.234 7.3149 12.699L7.33389 12.717C7.28069 12.087 7.36565 11.4529 7.58286 10.8591C7.80007 10.2653 8.1443 9.72606 8.5915 9.27906C9.0387 8.83208 9.578 8.48809 10.1719 8.27114C10.7658 8.05418 11.3999 7.96948 12.0299 8.02296L12.0109 8.00496C12.7641 8.07553 13.5208 7.91204 14.1777 7.5368C14.8346 7.16157 15.3597 6.59284 15.6816 5.90819C16.0034 5.22353 16.1062 4.45628 15.976 3.71105C15.8458 2.96582 15.4888 2.2789 14.9539 1.74396C14.419 1.20902 13.732 0.852103 12.9868 0.721883C12.2416 0.591653 11.4743 0.694473 10.7897 1.01629C10.105 1.33811 9.5363 1.86328 9.1611 2.52018C8.7858 3.17708 8.6223 3.93374 8.6929 4.68696L8.6749 4.66896C8.7281 5.29881 8.6431 5.93268 8.426 6.52632C8.2089 7.11996 7.86492 7.65907 7.41796 8.10603C6.97101 8.55299 6.43189 8.89702 5.83825 9.11406C5.24461 9.33116 4.61075 9.41616 3.9809 9.36296L3.9989 9.38096C3.38347 9.32576 2.76406 9.42686 2.19808 9.67476C1.6321 9.92266 1.13785 10.3095 0.761139 10.7993C0.384429 11.289 0.137449 11.866 0.0430689 12.4766C-0.0513011 13.0873 0.0099889 13.7119 0.221259 14.2925C0.432529 14.8732 0.786959 15.3911 1.25169 15.7983C1.71642 16.2056 2.27642 16.4889 2.8798 16.6221C3.48317 16.7552 4.1104 16.7339 4.70337 16.5602C5.29633 16.3864 5.83583 16.0658 6.27189 15.628H6.2699Z" />
+                </svg>
+                tian
+            </div>
+            <div class="nav-options">
+              <div class="nav-options-1"><a href="#home1">Home</a></div>
+              <div class="nav-options-1"><a href="#port1">Portfolio</a></div>
+              <div class="nav-options-1"><a href="#sk1">Skills</a></div>
+              <div class="nav-options-1"><a href="#jay">About Me</a></div>
+            </div>
+            <div class="navbar-menu">
+              <svg class="menu-svg" width="40" height="40" viewBox="0 0 40 40"  xmlns="http://www.w3.org/2000/svg">
+                <path class="menu-svg-1" d="M5 11.6667H35"  stroke-width="2.5" stroke-linecap="round"/>
+                <path class="menu-svg-1" d="M5 20H35"  stroke-width="2.5" stroke-linecap="round"/>
+                <path class="menu-svg-1" d="M5 28.3333H35"  stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+              
+            </div>
+            <div class="switch-mode">
+              <img src="./images/Switch Mode.svg">
+              <!-- <img src="./images/darkmode.svg" alt="darkmodesvg" class="switch-mode-dark"> -->
+              <button class="switch-mode-button" onclick="toggleTheme()">Button</button>              
+          </div>
+
+          </div>
+          
+        </header>
+          <div class="hero-intro" id="home1">
+            <div class="intro-name"> 
+              <div class="text-1">PRODUCT DESIGNER</div>
+              <div class="text-2">CRISTIAN MUÑOZ</div>
+              
+              <div class="intro-buttons">
+                <div class="icon-logos">
+                  <svg class="insta-logo"width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="insta-logo" d="M36.1408 13.5796C33.1008 13.6728 33.1016 18.0464 36.1408 18.1388C39.1808 18.0456 39.18 13.672 36.1408 13.5796ZM26 16.2188C20.612 16.2188 16.2444 20.598 16.2444 26C16.7584 38.9748 35.2432 38.9712 35.7552 26C35.7556 20.598 31.3876 16.2188 26 16.2188ZM26 32.3492C22.5028 32.3492 19.6676 29.5064 19.6676 26C20.0012 17.578 32.0004 17.58 32.3328 26C32.3324 29.5068 29.4972 32.3492 26 32.3492Z" fill="#292929"/>
+                    <path d="M44.8832 18.1673C44.7424 11.5005 40.5008 7.25645 33.8324 7.11685C32.2312 6.96245 19.7696 6.95965 18.1672 7.11685C11.5004 7.25765 7.25639 11.4993 7.11679 18.1677C6.96239 19.7665 6.95919 32.2321 7.11679 33.8329C7.24119 40.4781 11.5212 44.7593 18.1672 44.8833C19.7684 45.0393 32.23 45.0393 33.8324 44.8833C35.8544 44.7909 37.2356 44.4697 38.444 44.0001C42.6788 42.3085 44.748 38.5457 44.8832 33.8325C45.0376 32.2313 45.0404 19.7697 44.8832 18.1673ZM33.6764 41.4637C32.1008 41.6141 19.9 41.6165 18.3232 41.4637C16.4712 41.3793 15.4652 41.0697 14.7956 40.8097C9.01599 38.1289 10.808 32.7077 10.5356 25.2665C10.5416 23.5381 10.532 20.0521 10.536 18.3237C10.7668 13.1709 13.1936 10.7853 18.3232 10.5365C19.9008 10.3861 32.0984 10.3837 33.6764 10.5365C38.8308 10.7673 41.214 13.1941 41.4636 18.3233C41.5656 19.5549 41.6396 26.2781 41.4636 29.6805C41.6536 36.0709 41.3624 41.0889 33.6764 41.4637Z" fill="#292929"/>
+                    <rect x="0.5" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                    </svg>
+                    <svg  width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_561_2796)">
+                      <path class="figma-logo" d="M19.9332 45.9998C23.6132 45.9998 26.5998 43.0132 26.5998 39.3332V32.6665H19.9332C16.2532 32.6665 13.2665 35.6532 13.2665 39.3332C13.2665 43.0132 16.2532 45.9998 19.9332 45.9998Z" fill="#292929"/>
+                      <path class="figma-logo" d="M13.2665 26.0002C13.2665 22.3202 16.2532 19.3335 19.9332 19.3335H26.5998V32.6668H19.9332C16.2532 32.6668 13.2665 29.6802 13.2665 26.0002Z" fill="#292929"/>
+                      <path class="figma-logo" d="M13.2665 12.6667C13.2665 8.98667 16.2532 6 19.9332 6H26.5998V19.3333H19.9332C16.2532 19.3333 13.2665 16.3467 13.2665 12.6667Z" fill="#292929"/>
+                      <path class="figma-logo" d="M26.5999 6H33.2665C36.9465 6 39.9332 8.98667 39.9332 12.6667C39.9332 16.3467 36.9465 19.3333 33.2665 19.3333H26.5999V6Z" fill="#292929"/>
+                      <path class="figma-logo" d="M39.9332 26.0002C39.9332 29.6802 36.9465 32.6668 33.2665 32.6668C29.5865 32.6668 26.5999 29.6802 26.5999 26.0002C26.5999 22.3202 29.5865 19.3335 33.2665 19.3335C36.9465 19.3335 39.9332 22.3202 39.9332 26.0002Z" fill="#292929"/>
+                      </g>
+                      <rect x="1.10001" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                      <defs>
+                      <clipPath id="clip0_561_2796">
+                      <rect width="40" height="40" fill="white" transform="translate(6.60001 6)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      <svg  width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.3916 7.00535C36.5472 6.98895 14.9908 7.01655 10.0084 7.00535C8.458 7.00535 7.2 8.22495 7.2 9.72695V42.2794C7.2 43.7817 8.458 45.0001 10.0084 45.0001H42.3916C43.9428 45.0001 45.2 43.7817 45.2 42.2789V9.72695C45.2 8.22495 43.9428 7.00535 42.3916 7.00535Z" fill="#292929"/>
+                        <path class="linkedin-logo" d="M27.5812 38.802C27.5812 38.802 27.5812 29.2508 27.5812 29.2504C27.5256 27.4952 28.5748 25.8572 30.686 25.7836C32.7432 25.7836 33.5664 27.352 33.5664 29.6516V38.8016H39.252V28.994C39.252 23.74 36.4472 21.2952 32.706 21.2952C29.6388 21.2952 28.2916 23.0092 27.5432 24.1768L27.5812 21.6968H21.8956C21.9696 23.3016 21.8952 38.802 21.8952 38.802H27.5812ZM18.748 31.3844V21.6964H13.0616V38.8016H18.7484C18.7472 37.0056 18.7504 33.1552 18.748 31.3844ZM15.906 19.3616C17.8884 19.3616 19.1228 18.048 19.1228 16.4068C19.1064 12.448 12.7212 12.492 12.7264 16.4064C12.722 18.0604 13.9904 19.382 15.906 19.3616Z" fill="white"/>
+                        <rect x="0.699997" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                        </svg>
+                        <svg  width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="twitter-logo" d="M45.3684 14.4486C44.0016 15.0558 42.5332 15.4642 40.992 15.6486C42.566 14.7058 43.7728 13.2134 44.3412 11.4338C42.87 12.3066 41.2392 12.9406 39.502 13.2834C38.1124 11.8022 36.1328 10.8766 33.9416 10.8766C29.0984 10.8118 25.3748 15.5434 26.5208 20.2306C20.1892 19.9134 14.576 16.8798 10.8168 12.269C8.76519 15.6146 9.92999 20.399 13.1752 22.4414C11.9268 22.4014 10.7512 22.0586 9.72439 21.4886C9.67679 25.2106 12.3172 28.353 15.836 29.0542C14.7548 29.3558 13.5092 29.403 12.3952 29.1854C13.3652 32.2118 16.1788 34.4158 19.5124 34.477C16.4984 36.8854 12.2788 38.141 8.23199 37.6322C24.5048 47.647 42.494 34.5262 41.5652 18.3918C43.0544 17.3166 44.3472 15.9754 45.3684 14.4486Z" fill="#292929"/>
+                          <rect x="1.29999" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                          </svg>
+                          <svg  width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="telegram-logo" d="M26.3905 9.3335C23.0942 9.3335 19.8718 10.311 17.131 12.1423C14.3902 13.9737 12.254 16.5767 10.9925 19.6221C9.73108 22.6675 9.40102 26.0187 10.0441 29.2517C10.6872 32.4847 12.2745 35.4544 14.6054 37.7853C16.9363 40.1162 19.906 41.7035 23.139 42.3466C26.372 42.9897 29.7232 42.6596 32.7686 41.3982C35.814 40.1367 38.417 38.0005 40.2484 35.2597C42.0797 32.5188 43.0572 29.2965 43.0572 26.0002C43.0574 23.8114 42.6264 21.6441 41.7889 19.6219C40.9514 17.5997 39.7237 15.7623 38.176 14.2146C36.6284 12.667 34.791 11.4393 32.7688 10.6018C30.7466 9.76429 28.5793 9.33331 26.3905 9.3335ZM31.6897 34.5876C31.6273 34.7432 31.5324 34.8836 31.4113 34.9994C31.2902 35.1153 31.1458 35.204 30.9876 35.2594C30.8295 35.3149 30.6613 35.3359 30.4944 35.3211C30.3274 35.3063 30.1656 35.2559 30.0197 35.1734L25.4953 31.6578L22.5914 34.3368C22.524 34.3866 22.4452 34.4187 22.3622 34.43C22.2792 34.4413 22.1947 34.4316 22.1164 34.4017L22.6731 29.421L22.6909 29.4351L22.7023 29.3368C22.7023 29.3368 30.8439 21.9242 31.1756 21.6084C31.5114 21.2934 31.4006 21.2251 31.4006 21.2251C31.4197 20.8409 30.7981 21.2251 30.7981 21.2251L20.0105 28.1652L15.518 26.6352C15.518 26.6352 14.828 26.3877 14.763 25.8435C14.6947 25.3035 15.5405 25.0102 15.5405 25.0102L33.4022 17.9143C33.4022 17.9143 34.8705 17.2601 34.8705 18.3435L31.6897 34.5876Z" fill="black"/>
+                            <rect x="0.899994" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                            </svg>
+                            <svg  width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_561_2813)">
+                              <path class="medium-logo" d="M27.25 26C27.25 31.8586 22.7641 36.625 17.25 36.625C11.7359 36.625 7.25 31.8586 7.25 26C7.25 20.1414 11.7359 15.375 17.25 15.375C22.7641 15.375 27.25 20.1414 27.25 26ZM34.75 16C33.8621 16 32.1876 16.4314 30.9494 19.3205C30.1759 21.1251 29.75 23.4974 29.75 26C29.75 28.5026 30.1759 30.8749 30.9494 32.6795C32.1876 35.5686 33.8621 36 34.75 36C35.6379 36 37.3124 35.5686 38.5506 32.6795C39.3241 30.8749 39.75 28.5026 39.75 26C39.75 23.4974 39.3241 21.1251 38.5506 19.3205C37.3124 16.4314 35.6379 16 34.75 16ZM43.5 16C43.1685 16 42.8506 16.1317 42.6161 16.3661C42.3817 16.6006 42.25 16.9185 42.25 17.25V34.75C42.25 35.0815 42.3817 35.3995 42.6161 35.6339C42.8505 35.8683 43.1685 36 43.5 36C43.8315 36 44.1495 35.8683 44.3839 35.6339C44.6183 35.3995 44.75 35.0815 44.75 34.75V17.25C44.75 16.9185 44.6183 16.6006 44.3839 16.3661C44.1494 16.1317 43.8315 16 43.5 16Z" fill="black"/>
+                              </g>
+                              <rect x="0.5" y="0.5" width="51" height="51" rx="9.5" stroke="#E6E6E6"/>
+                              <defs>
+                              <clipPath id="clip0_561_2813">
+                              <rect width="40" height="40" fill="white" transform="translate(6 6)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                   
+                </div>
+                <div class="text-button">Download Curriculum Vitae
+                  <div class="text-download">
+                    <svg  width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5 18.3334C15.1023 18.3334 18.8333 14.6025 18.8333 10.0001C18.8333 5.39771 15.1023 1.66675 10.5 1.66675C5.89759 1.66675 2.16663 5.39771 2.16663 10.0001C2.16663 14.6025 5.89759 18.3334 10.5 18.3334Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10.5 7.08325V12.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8 10.4167L10.5 12.9167L13 10.4167" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portal-image-web">
+            <img src="./images/Portal.png" alt="portal image">
+          </div>
+          <div class="vintage-image-web">
+            <img src="./images/colorful-vintage-collage-design 1.png" alt="colorful vintage collage design" class="vintage-image-web">
+          </div>
+          </div>
+          
+        </main>
+      </div>
+      <div class="rates-div-whole">
+        <div class="rates">
+          <div clas="rates-1">
+            <div class="rates-1-stat">90%</div>
+            <div class="rates-1-info">Job Success Score on Upwork.</div>
+          </div>
+          <div class="rates-svg">
+            <img src="./images/Dawn.svg" alt="Dawn SVG">
+          </div>
+          <div clas="rates-1">
+            <div class="rates-1-stat">>25.000</div>
+            <div class="rates-1-info">Duplicates on Figma Community.</div>
+          </div>
+          <div class="rates-svg">
+            <img src="./images/Dawn.svg" alt="Dawn SVG">
+          </div>
+          <div clas="rates-1">
+            <div class="rates-1-stat">>2k</div>
+            <div class="rates-1-info">2K in finished works</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio" id="port1">
+        <div class="portfolio-header">PORTFOLIO</div>
+        <div class="mi-portal">
+            <div class="mi-portal-1">
+              <div class="portal-svg-div">
+                <img src="./images/frame-portal.png" class="portal-svg">
+              </div>
+                <div class="portal-info">
+                  <div class="portal-heading">Mi portal U</div>
+                  <tags>
+                    <label class="portal-tags">UX Design</label>
+                    <label class="portal-tags">University</label>
+                    <label class="portal-tags">Javascript</label>
+                  </tags>
+                </div>
+                <button class="portal-button">Figma Community</button>
+              </div>
+            <div class="mi-portal-1">
+                <div class="portal-svg-div">
+                  <img src="./images/frame-portal.png" class="portal-svg">
+                </div>
+                <div class="portal-info">
+                  <div class="portal-heading">Mi portal U</div>
+                  <tags>
+                    <label class="portal-tags">UX Design</label>
+                    <label class="portal-tags">University</label>
+                    <label class="portal-tags">Javascript</label>
+                  </tags>
+                </div>
+                <button class="portal-button">Figma Community</button>
+              
+        
+            </div>
+            <div class="mi-portal-1">
+              <div class="portal-svg-div">
+                <img src="./images/frame-portal.png" class="portal-svg">
+              </div>
+                <div class="portal-info">
+                  <div class="portal-heading">Mi portal U</div>
+                  <tags>
+                    <label class="portal-tags">UX Design</label>
+                    <label class="portal-tags">University</label>
+                    <label class="portal-tags">Javascript</label>
+                  </tags>
+                </div>
+                <button class="portal-button">Figma Community</button>
+            </div>
+
+
+            <div class="mi-portal-1">
+              <div class="portal-svg-div">
+                <img src="./images/frame-portal.png" class="portal-svg">
+              </div>
+                <div class="portal-info">
+                  <div class="portal-heading">Mi portal U</div>
+                  <tags>
+                    <label class="portal-tags">UX Design</label>
+                    <label class="portal-tags">University</label>
+                    <label class="portal-tags">Javascript</label>
+                  </tags>
+                </div>
+                <button class="portal-button">Figma Community</button>
+            </div>
+              <div class="mi-portal-1-web">
+                <div class="portal-svg-div">
+                  <img src="./images/frame-portal.png" class="portal-svg">
+                </div>
+                  <div class="portal-info">
+                    <div class="portal-heading">Mi portal U</div>
+                    <tags>
+                      <label class="portal-tags">UX Design</label>
+                      <label class="portal-tags">University</label>
+                      <label class="portal-tags">Javascript</label>
+                    </tags>
+                  </div>
+                  <button class="portal-button">Figma Community</button>
+                </div>
+              <div class="mi-portal-1-web">
+                <div class="portal-svg-div">
+                  <img src="./images/frame-portal.png" class="portal-svg">
+                </div>
+                  <div class="portal-info">
+                    <div class="portal-heading">Mi portal U</div>
+                    <tags>
+                      <label class="portal-tags">UX Design</label>
+                      <label class="portal-tags">University</label>
+                      <label class="portal-tags">Javascript</label>
+                    </tags>
+                  </div>
+                  <button class="portal-button">Figma Community</button>
+                
+                
+              </div>
+              <div class="mi-portal-1-web">
+                <div class="portal-svg-div">
+                  <img src="./images/frame-portal.png" class="portal-svg">
+                </div>
+                  <div class="portal-info">
+                    <div class="portal-heading">Mi portal U</div>
+                    <tags>
+                      <label class="portal-tags">UX Design</label>
+                      <label class="portal-tags">University</label>
+                      <label class="portal-tags">Javascript</label>
+                    </tags>
+                  </div>
+                  <button class="portal-button">Figma Community</button>
+                
+              </div>
+              <div class="mi-portal-1-web">
+                <div class="portal-svg-div">
+                  <img src="./images/frame-portal.png" class="portal-svg">
+                </div>
+                  <div class="portal-info">
+                    <div class="portal-heading">Mi portal U</div>
+                    <tags>
+                      <label class="portal-tags">UX Design</label>
+                      <label class="portal-tags">University</label>
+                      <label class="portal-tags">Javascript</label>
+                    </tags>
+                  </div>
+                  <button class="portal-button">Figma Community</button>
+                
+              </div>
+              <div class="disappear">
+                <div class="portal-svg-div">
+                  
+                </div>
+                  <div class="portal-info">
+                    <div class="portal-heading"></div>
+                    <tags>
+                     
+                    </tags>
+                  </div>
+                     
+              </div>
+
+
+        </div>
+        
+        </div>
+      </div>
+      <div class="skills-whole" id="sk1">
+        <div class="skills-heading">Skills</div>
+        <div class="skills-part">
+
+          <div class="in_skills_part">
+            <div class="skills-part-1">
+              <div class="skills-svg">
+                <img src="./images/Ellipse 7.png" class="skills-svg-one">
+                <span class="skills-percentage">97%</span>             
+              </div>
+              <div class="skills-info-whole">
+                <div class="skills-part-1-heading">UX Design</div>
+                <div class="skills-info">UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users.</div> 
+              </div>
+            </div>
+            <div class="skills-part-1">
+              <div class="skills-svg">
+                <img src="./images/Ellipse 7.png" class="skills-svg-one">
+                <span class="skills-percentage">97%</span>             
+              </div>
+              <div class="skills-info-whole">
+                <div class="skills-part-1-heading">UI Design</div>
+                <div class="skills-info">UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users.</div> 
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="in_skills_part">
+            <div class="skills-part-1">
+              <div class="skills-svg">
+                <img src="./images/Ellipse 7.png" class="skills-svg-one">
+                <span class="skills-percentage">97%</span>             
+              </div>
+              <div class="skills-info-whole">
+  
+                <div class="skills-part-1-heading">INFORMATION ARCHITECTURE</div>
+                <div class="skills-info">Information architecture is the design of the structure and organization of content on a website or digital product to make it easy for users to navigate and understand.</div> 
+              </div>
+  
+            </div>
+            <div class="skills-part-1">
+              <div class="skills-svg">
+                <img src="./images/Ellipse 7.png" class="skills-svg-one">
+                <span class="skills-percentage">97%</span>             
+              </div>
+              <div class="skills-info-whole">
+                <div class="skills-part-1-heading">FIGMA</div>
+                <div class="skills-info">Figma is a cloud-based design tool that allows teams to collaborate on the design process in real time. It offers a range of features for designing, prototyping, and sharing user interfaces.</div> 
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        
+          </div>
+        <div class="client-review">
+          <div class="client-review-sub">
+            <div class="client-name">Kaleb Lechtenberg</div>
+            <div class="review-details">"Working with this freelancer has been great. His attention to detail is unparalleled and finished all work ahead of schedule. Will gladly send more work and I do not hesitate to recommend him to you on your project also."</div>
+            <div>
+              <svg class="review-svg" width="100%" height="86" viewBox="0 0 72 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.0158 10.6128C49.7908 10.6128 35.9486 0 35.9486 0C35.9486 0 22.1064 10.6128 1.06636 10.6128C1.06636 10.6128 -1.33295 44.281 1.06636 55.9915C3.2811 66.9702 35.9486 86 35.9486 86C35.9486 86 68.6164 66.9702 71.0158 55.9915C73.2303 44.4637 71.0158 10.6128 71.0158 10.6128Z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          </div>
+          
+      <div class="about-me" id="jay">
+        <div class="about-image-and-details">
+          <div class="about-header-details-web">
+            <div class="about-me-and-svg">
+              <div class="about-heading">ABOUT ME</div>
+              <div class="zig-zag-web">
+                <img src="./images/Zig Zag.png">
+              </div> 
+            </div>  
+            <div class="about-details">I am a <span class="details-gradient-1">Designer</span>  and Frontend Developer, I fully understand the process of design and development of a digital product, my job is to make a product usable and visually appealing, through the <span class="details-gradient-1">Design Thinking</span> methodology I manage to create products that are endearing to users.</div>    
+          </div>
+          <div class="about-images">
+          <img src="./images/small-web.png" alt="image of small boy" class="image-boy-web">
+          <img src="./images/small.png" class="image-boy" alt="image of small baby">
+          <img  class="spiral-for-web" src="./images/Spiral 1.png" alt="spiral">
+        </div>
+        </div>
+        
+
+        <div class="about-image-and-details-even">
+          <div class="about-images">
+            <img src="./images/boy1-web.png" alt="Selfie" class="image-boy-web-even">
+            <img src="./images/boy1.png" class="image-boy" alt="Selfie">
+            <img  class="dawn-for-web" src="./images/Dawn.png" alt="dawn">
+          </div>
+          <div class="about-details-even">I am passionate about <span class="details-gradient-2">never stop learning</span>, I am constantly training and learning about new and changing <span class="details-gradient-2">technology</span> trends that way I bring an updated opinion of the Tech industry.
+          </div>
+        </div>
+
+        <div class="about-image-and-details-last">
+          <div class="about-details-last">My full name is <span class="details-gradient-3">Cristian David Muñoz Camayo</span> and more than what I said before I am a dreamer, I am proudly <span class="details-gradient-4">Colombian</span> and in me you will find a human being with the desire to do his best to help others.
+          </div>
+          <div class="about-images">
+            <img src="./images/boy2-web.png" alt="My visit to mountains" class="image-boy-web">
+            <img src="./images/boy2.png" class="image-boy" alt="My visit to mountains">
+            <img  class="warm-for-web" src="./images/Warm.png" alt="worm">
+          </div>
+        </div>
+      </div>
+ 
+
+    </main>
+    
+      <div class="creator-corner">
+          <img class="creator-svg-1" src="./images/creator-svg.svg">
+        <div class="creator-says">Thanks for visiting my website<br> If you have any questions you can write me to any of my social networks, I am sure I will answer you.
+        <div>
+          <img src="./images/web-Frame 36.svg" class="creator-svg-3">
+        </div>
+        </div>
+          <img src="./images/wave-svg.svg" class="creator-svg-2">
+      </div>
+      <footer class="footer-page">
+        <div class="logo-and-options">
+          <div class="footer-tian-logo">
+          <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer-svg">
+            <path class="footer-svg-1" d="M20.3489 12.37C19.9699 12.7513 19.6797 13.2115 19.4989 13.7177C19.3181 14.224 19.2512 14.7639 19.3029 15.299L19.2849 15.281C19.3381 15.9109 19.2531 16.5447 19.036 17.1384C18.8189 17.732 18.4749 18.2711 18.028 18.7181C17.581 19.165 17.0419 19.5091 16.4482 19.7261C15.8546 19.9432 15.2207 20.0282 14.5909 19.975L14.6089 19.993C13.8555 19.9229 13.0988 20.0868 12.4419 20.4625C11.7851 20.8382 11.2601 21.4073 10.9386 22.0923C10.6171 22.7773 10.5146 23.5447 10.6452 24.2901C10.7759 25.0354 11.1332 25.7223 11.6685 26.2571C12.2038 26.7919 12.891 27.1486 13.6364 27.2785C14.3819 27.4085 15.1492 27.3053 15.8339 26.9832C16.5186 26.661 17.0872 26.1356 17.4623 25.4784C17.8374 24.8212 18.0007 24.0644 17.9299 23.311L17.9489 23.329C17.8957 22.6992 17.9806 22.0653 18.1977 21.4716C18.4148 20.878 18.7589 20.3389 19.2058 19.8919C19.6528 19.445 20.1919 19.1009 20.7855 18.8839C21.3792 18.6668 22.013 18.5818 22.6429 18.635L22.6239 18.617C23.2393 18.6723 23.8588 18.5714 24.4249 18.3236C24.9909 18.0758 25.4853 17.6891 25.8621 17.1994C26.2389 16.7097 26.4861 16.1327 26.5805 15.5221C26.675 14.9114 26.6138 14.2868 26.4026 13.706C26.1914 13.1253 25.837 12.6073 25.3723 12.2C24.9076 11.7927 24.3476 11.5093 23.7442 11.3761C23.1408 11.2429 22.5135 11.2641 21.9205 11.4378C21.3275 11.6116 20.788 11.9322 20.3519 12.37H20.3489Z" />
+            <path class="footer-svg-1" d="M12.9718 17.635L12.9528 17.617C13.4881 17.6709 14.0287 17.6052 14.5356 17.4246C15.0424 17.244 15.5028 16.9531 15.8834 16.5728C16.2639 16.1925 16.5553 15.7323 16.7362 15.2256C16.9172 14.7189 16.9833 14.1784 16.9298 13.643L16.9488 13.661C16.8956 13.0311 16.9806 12.3973 17.1976 11.8036C17.4147 11.21 17.7588 10.6709 18.2057 10.2239C18.6527 9.77702 19.1918 9.43292 19.7854 9.21592C20.3791 8.99878 21.0129 8.91385 21.6428 8.96702L21.6238 8.94902C22.3773 9.01982 23.1342 8.85638 23.7914 8.48112C24.4487 8.10586 24.9741 7.53699 25.2961 6.85212C25.6181 6.16726 25.721 5.39973 25.5908 4.65422C25.4606 3.90871 25.1036 3.22153 24.5684 2.68639C24.0333 2.15126 23.3461 1.79422 22.6006 1.664C21.8551 1.53377 21.0876 1.63668 20.4027 1.9587C19.7178 2.28071 19.149 2.80616 18.7737 3.46337C18.3984 4.12057 18.235 4.87754 18.3058 5.63102L18.2878 5.61202C18.3411 6.24191 18.2563 6.87585 18.0393 7.46957C17.8223 8.06329 17.4782 8.60248 17.0313 9.04952C16.5843 9.49642 16.0451 9.84052 15.4514 10.0575C14.8576 10.2745 14.2237 10.3593 13.5938 10.306L13.6118 10.325C13.0765 10.2711 12.5358 10.3368 12.029 10.5174C11.5222 10.6979 11.0618 10.9889 10.6812 11.3692C10.3006 11.7495 10.0093 12.2097 9.82834 12.7164C9.64744 13.2231 9.58134 13.7636 9.63484 14.299L9.61684 14.281C9.66984 14.9108 9.58474 15.5446 9.36764 16.1382C9.15044 16.7317 8.80644 17.2708 8.35954 17.7177C7.9126 18.1646 7.37356 18.5086 6.78 18.7258C6.18644 18.9429 5.55265 19.028 4.92284 18.975L4.94084 18.993C4.18736 18.9222 3.43039 19.0856 2.77318 19.4609C2.11598 19.8362 1.59053 20.405 1.26852 21.0899C0.946502 21.7748 0.843582 22.5423 0.973812 23.2878C1.10404 24.0333 1.46108 24.7205 1.99621 25.2556C2.53135 25.7908 3.21853 26.1478 3.96404 26.278C4.70955 26.4082 5.47708 26.3053 6.16195 25.9833C6.84681 25.6613 7.41568 25.1359 7.79094 24.4787C8.16624 23.8214 8.32964 23.0645 8.25884 22.311L8.27784 22.329C8.22464 21.6991 8.30964 21.0653 8.52674 20.4716C8.74374 19.878 9.08784 19.3389 9.53474 18.8919C9.98174 18.445 10.5208 18.1009 11.1144 17.8839C11.7081 17.6668 12.3419 17.5818 12.9718 17.635Z" s/>
+            <path class="footer-svg-1" d="M6.2699 15.628C6.64892 15.2468 6.9391 14.7866 7.11974 14.2803C7.30038 13.774 7.36702 13.234 7.3149 12.699L7.33389 12.717C7.28069 12.087 7.36565 11.4529 7.58286 10.8591C7.80007 10.2653 8.1443 9.72606 8.5915 9.27906C9.0387 8.83208 9.578 8.48809 10.1719 8.27114C10.7658 8.05418 11.3999 7.96948 12.0299 8.02296L12.0109 8.00496C12.7641 8.07553 13.5208 7.91204 14.1777 7.5368C14.8346 7.16157 15.3597 6.59284 15.6816 5.90819C16.0034 5.22353 16.1062 4.45628 15.976 3.71105C15.8458 2.96582 15.4888 2.2789 14.9539 1.74396C14.419 1.20902 13.732 0.852103 12.9868 0.721883C12.2416 0.591653 11.4743 0.694473 10.7897 1.01629C10.105 1.33811 9.5363 1.86328 9.1611 2.52018C8.7858 3.17708 8.6223 3.93374 8.6929 4.68696L8.6749 4.66896C8.7281 5.29881 8.6431 5.93268 8.426 6.52632C8.2089 7.11996 7.86492 7.65907 7.41796 8.10603C6.97101 8.55299 6.43189 8.89702 5.83825 9.11406C5.24461 9.33116 4.61075 9.41616 3.9809 9.36296L3.9989 9.38096C3.38347 9.32576 2.76406 9.42686 2.19808 9.67476C1.6321 9.92266 1.13785 10.3095 0.761139 10.7993C0.384429 11.289 0.137449 11.866 0.0430689 12.4766C-0.0513011 13.0873 0.0099889 13.7119 0.221259 14.2925C0.432529 14.8732 0.786959 15.3911 1.25169 15.7983C1.71642 16.2056 2.27642 16.4889 2.8798 16.6221C3.48317 16.7552 4.1104 16.7339 4.70337 16.5602C5.29633 16.3864 5.83583 16.0658 6.27189 15.628H6.2699Z" />
+            </svg>
+            tian
+        </div>
+        <div class="footer-options">
+          <div class="footer-options-1"><a href="#home1">Home</a></div>
+          <div class="footer-options-1"><a href="#port1">Portfolio</a></div>
+          <div class="footer-options-1"><a href="#sk1">Skills</a></div>
+          <div class="footer-options-1"><a href="#jay">About Me</a></div>
+        </div>
+        </div>
+        <div>
+          <hr>
+        </div>
+      
+    </footer>
+
+    <script>
+      function toggleTheme() {
+        // console.log('helooooooooo');
+          // Obtains an array of all <link>
+          // elements.
+          // Select your element using indexing.
+          var theme = document.getElementsByTagName('link')[0];
+
+          // Change the value of href attribute 
+          // to change the css sheet.
+          console.log(theme.getAttribute('href'));
+          if (theme.getAttribute('href') == 'dark.css') {
+              theme.setAttribute('href', 'light.css');
+          } else {
+              theme.setAttribute('href', 'dark.css');
+          }
+      }
+    </script>
+  </body>
