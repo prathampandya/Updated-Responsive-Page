@@ -16,7 +16,6 @@
 
 a{
     color: #ffffff;
-     
 }
 a:visited {
     background:transparent;
@@ -73,6 +72,10 @@ html {
 }
 .switch-mode{
     display: none;
+}
+.switch-mode-button{
+    color: #ffffff;
+    background-color: #6f349d;
 }
 .nav-options{
     display: none;
@@ -2375,15 +2378,12 @@ hr{
     }
     .switch-mode-button{
         padding: 12px 24px;
-          
-         
         border-radius: 4px;
         font-weight: 400;
         font-size: 16px;
         line-height: 100%;
         font-style: normal;
         letter-spacing: -0.05em;
-
     }
     /* .menu-svg {
          
@@ -2811,7 +2811,7 @@ hr{
     .about-heading{
          
         font-family:Anton ;
-        font-size: 64px;
+        font-size: 6.25vw;
         font-weight: 400;
         padding-left: 0;
     }

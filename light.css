@@ -14,16 +14,14 @@
    
 }
 
-a{
+.footer-options-1 a {
+    color: #ffffff;    
+}
+.nav-options-1 a {
     color: #292929;
 }
-a:visited {
-    color: #292929;
-    background-color: transparent;
-    text-decoration: none;
-  }
   a:active {
-    color: #784DC7;
+    color: #119372;
     background-color: transparent;
   }
 body{
@@ -4396,7 +4394,7 @@ hr{
         .about-heading{
             color: #292929;
             font-family:Anton ;
-            font-size: 64px;
+            font-size: 6.25vw;
             font-weight: 400;
             padding-left: 0;
         }
@@ -4548,7 +4546,7 @@ hr{
         .footer-options{
             display: flex;
             font-family: "gotham";
-            color: #f0f8ff;
+            color: #ffffff;
             /* width: 360px; */
             gap: 30px;
             padding-left: 0;
